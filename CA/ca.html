@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CA</title>
+  </head>
+  <style>
+    .container {
+      display: grid;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      border: 1px solid black;
+      height: 600px;
+      width: 100%;
+    }
+    .item1 {
+      background-color: aqua;
+    }
+    .item2 {
+      background-color: rgb(183, 243, 71);
+    }
+    .item3 {
+      grid-column-start: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+
+      background-color: rgb(247, 107, 244);
+    }
+    .item4 {
+      background-color: yellow;
+    }
+    .item5 {
+      background-color: green;
+    }
+    .item6 {
+      display: grid;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      background-color: rgb(246, 246, 252);
+      /* grid-template-areas: "initem1 initem2"
+                                        "initem3 initem3"
+                                        "initem4 initem4"; */
+    }
+
+    .item7 {
+      background-color: brown;
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+    .initem1 {
+      background-color: blueviolet;
+    }
+    .initem2 {
+      background-color: rgb(222, 97, 203);
+    }
+    .initem3 {
+      background-color: rgb(87, 197, 50);
+    }
+    .initem4 {
+      background-color: rgb(196, 162, 167);
+    }
+    @media screen and (max-width: 600px) {
+      .container {
+        height: 600px;
+        display: block;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="item1">b1</div>
+      <div class="item2">b2</div>
+      <div class="item3">b3</div>
+      <div class="item4">b4</div>
+      <div class="item5">b5</div>
+      <div class="item6">
+        <div class="initem1">i1</div>
+        <div class="initem2">i2</div>
+        <div class="initem3">i3</div>
+        <div class="initem4">i4</div>
+      </div>
+      <div class="item7">b7</div>
+    </div>
+  </body>
+</html>

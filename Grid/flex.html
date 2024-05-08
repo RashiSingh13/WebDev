@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+    <style>
+              body{
+                  padding: 0 20px 30px 0;
+              }
+              .flex-container{
+                  display: flex;
+                
+                  /* flex-direction: column; */
+                  /* flex-wrap: wrap;  */
+                  /* flex-wrap: nowrap; minimise window and no vhange */
+                  align-content: space-around;
+              }
+              .flex-item{
+                  width: 75px;
+                  /* height: 75px; */
+                  background-color: rgb(228, 197, 156);
+                  border: 2px solid rgb(107, 43, 226);
+                  text-align: center;
+                  color: white;
+                  font-weight: bold;
+                  line-height: 1.4;
+              }
+              #it-1{
+                  background-color: aqua;
+                  /* order: 5; change it 1 with it5 */
+              }
+              #it-2{
+                   background-color: rgb(215, 98, 161);
+                   /* flex-basis: 200px; */
+                   flex-grow: 2;
+              }
+              #it-3{
+      background-color: rgb(120, 228, 106);
+              }
+              #it-4{
+      background-color: rgb(193, 216, 63);
+              }
+              #it-5{
+      background-color: rgb(218, 93, 122);
+              }
+    </style>
+  </head>
+
+  <!-- display : flex   
+        flex-direction : row or column or column-reverse or row-reverse;
+        justify-content(horizontely alignment): flex-start or flex-end or flex-centre or space around(same margin) or space-between (margin left and right )
+        align-items(vertically alignment): stretch or baseline or centre or flex end or flex start
+        align-self(applied on children):
+    -->
+  <body>
+    <div class="flex-container">
+      <div class="flex-item" id="it-1">Item 1</div>
+      <div class="flex-item" id="it-2">Item 2</div>
+      <div class="flex-item" id="it-3">Item 3</div>
+      <div class="flex-item" id="it-4">Item 4</div>
+      <div class="flex-item" id="it-5">Item 5</div>
+      <div class="flex-item" id="it-6">Item 6</div>
+      <div class="flex-item" id="it-7">Item 7</div>
+      <div class="flex-item" id="it-8">Item 8</div>
+      <div class="flex-item" id="it-9">Item 9</div>
+      <div class="flex-item" id="it-10">Item 10</div>
+    </div>
+  </body>
+</html>
